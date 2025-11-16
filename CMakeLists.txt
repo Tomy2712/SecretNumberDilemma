@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.20)
+
+project(SecretNumberDilemma LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin/${CMAKE_BUILD_TYPE})
+
+set(INCLUDE_DIR "${PROJECT_SOURCE_DIR}/include")
+
+add_subdirectory(src)

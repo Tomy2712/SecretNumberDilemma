@@ -39,3 +39,14 @@
 
 # debug information files
 *.dwo
+
+# build
+/bin
+
+# CMake folder
+/cmake-build-debug
+/cmake-build-release
+/bin-int
+
+# IDE
+/.idea/
