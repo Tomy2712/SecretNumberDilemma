@@ -1,8 +1,12 @@
 set(EXECUTABLE_NAME "SecretNumberDilemma")
-add_executable(${EXECUTABLE_NAME}
+set(SOURCES
         main.cpp
+        csp/variable.cpp
+        csp/constraint/binaryConstraint.cpp
+        csp/constraint/allDifferenceConstraint.cpp
+        csp/constraint/constraint.cpp
 )
 
-target_include_directories(${EXECUTABLE_NAME} PRIVATE
-        ${INCLUDE_DIR}
-)
+add_executable(${EXECUTABLE_NAME} ${SOURCES})
+
+target_include_directories(${EXECUTABLE_NAME} PRIVATE ${INCLUDE_DIR})
