@@ -2,7 +2,7 @@
 // Created by Tom on 17/11/2025.
 //
 
-#include "../../include/secretNumberDilemma/csp/variable.h"
+#include "secretNumberDilemma/csp/variable.h"
 
 namespace secretNumberDilemma {
     unsigned char Variable::nombreInstances = 0;
@@ -23,9 +23,12 @@ namespace secretNumberDilemma {
         return this->domain;
     }
 
-    void Variable::removeValueFromDomain(const unsigned char value) {
-        if (this->domain.contains(value))
+    bool Variable::removeValueFromDomain(const unsigned char value) {
+        if (this->domain.contains(value)) {
             this->domain.erase(value);
+            return true;
+        }
+        return false;
     }
 
     void Variable::display() const {

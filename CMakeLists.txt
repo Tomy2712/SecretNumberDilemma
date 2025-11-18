@@ -9,3 +9,5 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin/${CMAKE_BUILD_TYPE}
 set(INCLUDE_DIR "${PROJECT_SOURCE_DIR}/include")
 
 add_subdirectory(src)
+
+add_subdirectory(tests)

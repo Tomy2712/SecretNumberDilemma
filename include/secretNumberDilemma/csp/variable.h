@@ -22,8 +22,9 @@ namespace secretNumberDilemma {
         /**
          * Remove the 'value' from the domain
          * @param value to remove
+         * @return true if the value was in the domain and has been removed, false otherwise
          */
-        void removeValueFromDomain(unsigned char value);
+        bool removeValueFromDomain(unsigned char value);
 
         void display() const;
 

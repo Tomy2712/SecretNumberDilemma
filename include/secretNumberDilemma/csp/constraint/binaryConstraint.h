@@ -11,12 +11,14 @@
 namespace secretNumberDilemma {
     class BinaryConstraint: public Constraint {
     public:
-        BinaryConstraint(Variable *variable1, Variable *variable2);
+        BinaryConstraint(Variable *variable1, Variable *variable2, unsigned char res);
         ~BinaryConstraint() override = 0;
 
     protected:
         Variable *variable1;
         Variable *variable2;
+
+        unsigned char res;
 
     };
 } // secretNumberDilemma

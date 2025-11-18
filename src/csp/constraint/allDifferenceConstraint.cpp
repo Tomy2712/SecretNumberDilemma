@@ -2,7 +2,7 @@
 // Created by Tom on 17/11/2025.
 //
 
-#include "../../../include/secretNumberDilemma/csp/constraint/allDifferenceConstraint.h"
+#include "secretNumberDilemma/csp/constraint/allDifferenceConstraint.h"
 
 namespace secretNumberDilemma {
     AllDifferenceConstraint::AllDifferenceConstraint(const std::vector<Variable *> &variables) : variables(variables) {}
@@ -22,8 +22,7 @@ namespace secretNumberDilemma {
         for (const auto& variable : this->variables) {
             if (variable->getDomain().size() > 1) {
                 for (const auto val : valueToRemove) {
-                    variable->removeValueFromDomain(val);
-                    modified = true;
+                    modified |= variable->removeValueFromDomain(val);
                 }
             }
         }
