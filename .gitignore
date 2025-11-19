@@ -42,6 +42,7 @@
 
 # build
 /bin
+/build
 
 # CMake folder
 /cmake-build-debug

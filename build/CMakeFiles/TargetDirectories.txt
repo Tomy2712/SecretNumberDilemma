@@ -1,8 +1,0 @@
-/home/runner/work/SecretNumberDilemma/SecretNumberDilemma/build/CMakeFiles/edit_cache.dir
-/home/runner/work/SecretNumberDilemma/SecretNumberDilemma/build/CMakeFiles/rebuild_cache.dir
-/home/runner/work/SecretNumberDilemma/SecretNumberDilemma/build/src/CMakeFiles/SecretNumberDilemma.dir
-/home/runner/work/SecretNumberDilemma/SecretNumberDilemma/build/src/CMakeFiles/edit_cache.dir
-/home/runner/work/SecretNumberDilemma/SecretNumberDilemma/build/src/CMakeFiles/rebuild_cache.dir
-/home/runner/work/SecretNumberDilemma/SecretNumberDilemma/build/tests/CMakeFiles/SecretNumberDilemma_tests.dir
-/home/runner/work/SecretNumberDilemma/SecretNumberDilemma/build/tests/CMakeFiles/edit_cache.dir
-/home/runner/work/SecretNumberDilemma/SecretNumberDilemma/build/tests/CMakeFiles/rebuild_cache.dir
