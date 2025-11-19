@@ -42,6 +42,8 @@
 
 # build
 /bin
+/build
+/_codeql_build_dir
 
 # CMake folder
 /cmake-build-debug
