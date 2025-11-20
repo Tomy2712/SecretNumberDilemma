@@ -5,16 +5,22 @@
 #ifndef SECRETNUMBERDILEMMA_CONSTRAINT_H
 #define SECRETNUMBERDILEMMA_CONSTRAINT_H
 
+
+#include "secretNumberDilemma/csp/variable.h"
+#include "secretNumberDilemma/utils/utils.h"
+
 namespace secretNumberDilemma {
+
     class Constraint {
     public:
         virtual ~Constraint() = default;
 
-        /**
-         * Reduced domains of the variables
-         * @return true if there is a modification, false otherwise
-         */
+
         virtual bool filterDomain() = 0;
+
+        virtual bool simulateConstraint(State &state) = 0;
+    private:
+
     };
 } // secretNumberDilemma
 

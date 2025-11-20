@@ -1,7 +1,3 @@
-//
-// Created by Tom on 18/11/2025.
-//
-
 #include "secretNumberDilemma/tests/allDifferenceConstraint.h"
 
 namespace secretNumberDilemma {
@@ -13,11 +9,11 @@ namespace secretNumberDilemma {
     }
 
     void AllDifferenceConstraintTester::testNoModification() {
-        std::vector<Variable*> variables;
+        std::vector<std::shared_ptr<Variable>> variables;
         variables.reserve(3);
 
         for (int i = 0; i < 3; ++i) {
-            variables.push_back(new Variable());
+            variables.push_back(std::make_shared<Variable>());
         }
 
         AllDifferenceConstraint allDiffConstraint(variables);
@@ -32,11 +28,11 @@ namespace secretNumberDilemma {
     }
 
     void AllDifferenceConstraintTester::testSingleRemoval() {
-        std::vector<Variable*> variables;
+        std::vector<std::shared_ptr<Variable>> variables;
         variables.reserve(3);
 
         for (int i = 0; i < 3; ++i) {
-            variables.push_back(new Variable());
+            variables.push_back(std::make_shared<Variable>());
         }
 
         AllDifferenceConstraint allDiffConstraint(variables);

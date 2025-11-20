@@ -8,30 +8,28 @@
 #include <set>
 #include <iostream>
 
+#include "secretNumberDilemma/utils/utils.h"
+
 namespace secretNumberDilemma {
     class Variable {
     public:
         Variable();
-        ~Variable() = default;
+        ~Variable();
 
+        uchar getId() const;
+        uchar getIdLetter() const;
+        std::set<uchar> getDomain() const;
 
-        [[nodiscard]] unsigned char getId() const;
+        bool removeValueFromDomain(uchar value);
 
-        [[nodiscard]] std::set<unsigned char> getDomain() const;
-
-        /**
-         * Remove the 'value' from the domain
-         * @param value to remove
-         * @return true if the value was in the domain and has been removed, false otherwise
-         */
-        bool removeValueFromDomain(unsigned char value);
+        bool isSolved() const;
 
         void display() const;
 
     private:
-        static unsigned char nombreInstances;
-        unsigned char id;
-        std::set<unsigned char> domain;
+        static uchar nombreInstances;
+        uchar id;
+        std::set<uchar> domain;
     };
 } // secretNumberDilemma
 

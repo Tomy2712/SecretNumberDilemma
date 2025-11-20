@@ -1,7 +1,3 @@
-//
-// Created by Tom on 18/11/2025.
-//
-
 #include "secretNumberDilemma/tests/variableTester.h"
 
 namespace secretNumberDilemma {
@@ -28,10 +24,10 @@ namespace secretNumberDilemma {
     void VariableTester::testInitialDomain()  {
         const Variable var;
 
-        const std::set<unsigned char> domain = var.getDomain();
+        const std::set<uchar> domain = var.getDomain();
         assert(domain.size() == 100);
 
-        for (unsigned char i = 1; i <= 100; ++i) {
+        for (uchar i = 1; i <= 100; ++i) {
             assert(domain.contains(i));
         }
 
@@ -44,7 +40,7 @@ namespace secretNumberDilemma {
         bool res = var.removeValueFromDomain(50);
         assert(res);
 
-        std::set<unsigned char> domain = var.getDomain();
+        std::set<uchar> domain = var.getDomain();
         assert(domain.size() == 99);
         assert(!domain.contains(50));
 
